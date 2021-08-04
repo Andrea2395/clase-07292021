@@ -1,0 +1,10 @@
+-
+  name: Crear nuevo folder
+  hosts: all
+  tasks:
+    - name: Nuevo folder
+      command: mkdir /tmp/ucreativa
+    - name: Subir archivo
+      copy:
+        src: /home/andreaRM/projects/newfile.txt
+        dest: /tmp/ucreativa/newfile.txt
