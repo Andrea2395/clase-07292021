@@ -1,0 +1,8 @@
+
+-
+  name: Desplegar fecha y hora del host
+  hosts: localhost
+  tasks:
+    - name: Fecha y hora del host
+      debug:
+        msg={{ ' '.join((ansible_date_time.date,ansible_date_time.time)) }}
